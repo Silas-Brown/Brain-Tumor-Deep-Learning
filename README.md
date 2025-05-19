@@ -14,13 +14,13 @@ We use 3064 brain images to distinguish and predict three kinds of tumors: Menin
   - **Using theory to infer a reasonable, efficient search space that respects computational costs and learning**
   - **Hyperparameter defined as resolution of images, batch size, number of hidden layers**
   - **Hyperparameter search space defined as**
-      - Resolution in {128x128,256x256}
-      - Batch sizes in {32,64}
-      - Layers in {2,3,4}
+      - Resolution in {128 x 128, 256 x 256}
+      - Batch sizes in {32, 64}
+      - Layers in {2, 3, 4}
  ### 🔹 (2.2) Designing the neural architecture of the model
    - **Make earlier layers extremely wide but abruptly narrow the deeper layers**
  ### 🔹 (2.3) Custom loss functions and custom performance metric to maximize with respect to hyperparameter configuration
-   - **Loss function is a weighted cross-entropy function based on the mortality risks of each tumor**
+   - **Loss function is a weighted cross-entropy function weighted based on the mortality risks of each tumor**
    - **Performance metric is a weighted combination of F1-scores weighted on the same principles as the loss function. Normalized to be between 0 and 1 for easier interpretability.**
  ### 🔹 (2.4) Hyperparameter grid search and early stopping for each model training
    - **Best configuration is (resolution, batch size, hidden layers)=(128x128, 64, 2)**
