@@ -19,8 +19,7 @@ We use 3064 brain images to distinguish and predict three kinds of tumors: Menin
       - Layers in {2, 3, 4}
  ### 🔹 (2.2) Designing the neural architecture of the model
    - **Make earlier layers extremely wide but abruptly narrow the deeper layers**
- ### 🔹 (2.3) Custom loss functions and custom performance metric to maximize with respect to hyperparameter configuration
- 
+ ### 🔹 (2.3) Custom loss function. Custom performance metric to maximize with respect to hyperparameter.
    - **Loss function is a weighted cross-entropy function weighted based on the mortality risks of each tumor**
    - **Performance metric is a weighted combination of F1-scores weighted on the same principles as the loss function. Normalized to be between 0 and 1 for easier interpretability.**
  ### 🔹 (2.4) Hyperparameter grid search and early stopping for each model training
