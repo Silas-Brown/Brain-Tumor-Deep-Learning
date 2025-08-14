@@ -23,7 +23,7 @@ We use 3064 brain images to distinguish and predict three kinds of tumors: Menin
    - **Loss function is a weighted cross-entropy function weighted based on the mortality risks of each tumor**
    - **Performance metric is a weighted combination of F1-scores weighted on the same principles as the loss function. Normalized to be between 0 and 1 for easier interpretability.**
  ### 🔹 (2.4) Hyperparameter grid search and early stopping for each model training
-   - **Best configuration is (resolution, batch size, hidden layers)=(128x128, 64, 2)**
+   - **Best configurations were (resolution, batch size, hidden layers) in {(128x128, 64, 4), (256x256,64,3), (256x256,64,4)}, all yielding the same score of 0.833**
    - **Early stopping for each model with maximum epochs of 50, patience of 3, and min_delta of 0.01**
 
 ## (3) Implementation  
