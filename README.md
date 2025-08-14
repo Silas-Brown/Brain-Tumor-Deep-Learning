@@ -6,7 +6,7 @@ We use 3064 brain images to distinguish and predict three kinds of tumors: Menin
 
 ✅ **Dataset:** 3064 images, 3 classes (Meningioma, Glioma, Pituitary tumors)   
 ✅ **Goal:** Predict and distinguish the 3 tumors  
-✅ **Result:** A custom performance metric normalized between 0 and 1 scoring 0.835.
+✅ **Result:** A custom performance metric normalized between 0 and 1 scoring 0.833.
 ---
 
 ## (2) Methodology  
@@ -24,7 +24,7 @@ We use 3064 brain images to distinguish and predict three kinds of tumors: Menin
    - **Performance metric is a weighted combination of F1-scores weighted on the same principles as the loss function. Normalized to be between 0 and 1 for easier interpretability.**
  ### 🔹 (2.4) Hyperparameter grid search and early stopping for each model training
    - **Best configuration is (resolution, batch size, hidden layers)=(128x128, 64, 2)**
-   - **Early stopping for each model with maximum epochs of 50, patience of 5, and min_delta of 0.005**
+   - **Early stopping for each model with maximum epochs of 50, patience of 3, and min_delta of 0.01**
 
 ## (3) Implementation  
 
